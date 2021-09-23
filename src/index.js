@@ -20,6 +20,14 @@ return json;
 }
 
 // Ein Funktion um die zufällige Nummer hinter dem Namen zu generieren
+
+/**
+ * @function createRandomNumber
+ * @description creates a random number according to a minimal and maximal value
+ * @param {number} minNumber 
+ * @param {number} maxNumber 
+ * @returns {number}
+ */
 function createRandomNumber(minNumber, maxNumber)
 {
     const num = Math.floor(Math.random() * (maxNumber - minNumber) + minNumber);
@@ -28,5 +36,13 @@ function createRandomNumber(minNumber, maxNumber)
 }
 
 // Eine Funktion mit der wir den ersten Buchstaben des jeweiligen Wortes groß schreiben(PascalCase)
+function capitalizeString(word)
+{
+    if(word === undefined || word.length === 0)
+    {
+        return "Default";
+    }
+}
+
 // Eine Funktion mit der wir den Benutzernamen generieren  und auf die ergebnisse der anderen Funktion zugreifen
 // Einen Export, um die Applikation in der anderen Datei zu nutzen
